@@ -1,0 +1,122 @@
+table {
+    display: block;
+    width: 100%;
+  }
+  
+  tr, td, tbody, tfoot {
+    display: block;
+  }
+  
+  thead {
+    display: none;
+  }
+  
+  tr {
+    padding-bottom: 5px;
+  }
+  
+  td {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+  
+  td:before {
+    color: rgba(44, 56, 69, 0.65);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-right: 5px;
+    display: block;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  thead th {
+    background-color: #242d38;
+    color: #fff;
+    border: 1px solid #242d38;
+    padding: 10px;
+  }
+  
+  tfoot th {
+    display: block;
+    color: rgba(44, 56, 69, 0.35);
+  }
+  
+  .button {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: #4c5a67;
+  }
+  
+  .select:before {
+    display: none;
+  }
+  
+  @media (min-width: 460px) {
+    td {
+      text-align: left;
+    }
+  
+  
+    .select {
+      padding-left: 20px;
+    }
+  }
+  
+  @media (min-width: 720px) {
+    table {
+      display: table;
+    }
+  
+    tr {
+      display: table-row;
+    }
+  
+    td,
+    th {
+      display: table-cell;
+    }
+  
+    tbody {
+      display: table-row-group;
+    }
+  
+    thead {
+      display: table-header-group;
+    }
+  
+    tfoot {
+      display: table-footer-group;
+    }
+  
+    td {
+      border: 1px solid #2c3845;
+    }
+  
+    tr:nth-child(2n+2) td {
+      background-color: lightgrey ;
+    }
+  }
+  
+  #deleteBtn{
+      line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color:  #c30010;
+  }
