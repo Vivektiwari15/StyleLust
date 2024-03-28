@@ -1,0 +1,127 @@
+.circle-left {
+    position: absolute;
+    background-image: url('../images/miscellaneous/lines.jpg');
+    width: 340px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  .circle-left {
+    top: 113px;
+    left: 113px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .square1 {
+  height: 310px;
+  width: 230px;
+  background-image: url('../images/outfits/3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -9px 0px ; 
+  position: absolute;
+  top: 2%;
+  left: 29%;
+  z-index: 2;
+  border: 1px solid none;
+  border-radius: 20px;  
+  filter:brightness(0.7);
+}
+  .square2 {
+  height: 350px;
+  width: 280px;
+  background-color: purple;
+  position: absolute;
+  top: 17%;
+  left: 14%;
+  z-index: 2;
+  border: 1px solid none;
+  border-radius: 20px;  
+  background-image: url('../images/outfits/2.png');
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: -19px 0px ; 
+  filter:brightness(0.7);
+}
+  .square3 {
+  height: 320px;
+  width: 240px;
+  background-color: purple;
+  position: absolute;
+  top: 39%;
+  left: 4%;
+  z-index: 3;
+  border: 1px solid none;
+  border-radius: 20px;  
+  background-image: url('../images/outfits/1.png');
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: -10px 0px;
+  filter:brightness(0.8); 
+}
+
+.work-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    position: relative;
+    background-color: #85746c;
+    top: 120px;
+    right: 110px;
+    font-size: 75px;
+    text-align: center;
+    z-index: 4;
+    width: 130%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: #85746c;
+    letter-spacing: 4px;
+}
+
+.work-text{
+    position: relative;
+    width: auto;
+    z-index: 5;
+    color: black;
+    top: 150px;
+    right: 230px;
+    text-align: center;
+    color: white;
+    background-color: #85746c;
+    font-size: 20px;
+    width: 170%;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn-view-more{
+
+    position: relative;
+    width: auto;
+    z-index: 5;
+    color: black;
+    top: 180px;
+    right: 60px;
+    text-align: center;
+    color: white;
+    background-color: #85746c;
+    font-weight: 400;
+    font-size: x-large;
+    padding: 20px 30px 20px 30px;
+    border: 4px solid white;
+    border-radius: 14px;    
+    font-weight: 600;
+}
+
+    .triangle-up {
+	width: 25%;
+	height: 0;
+	border-left: 600px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 100vh solid #85746c;
+    border-top: 1px solid transparent;
+    position: absolute; 
+    right: 0;   
+    z-index: 10;
+    overflow: visible;
+}

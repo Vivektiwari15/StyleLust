@@ -1,0 +1,59 @@
+.container{
+    margin-top: 12px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+}
+
+.square{
+    height: 240px;
+    width: 220px;
+    /* background-image: url('Outfits/1.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1px solid none;
+    border-radius: 20px;  
+  }
+
+.like-btn{
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    
+
+}
+.eye-icon{
+    margin-right: 3px;
+}
+
+.view{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 8px;
+    font-weight: 800;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.heart {
+    --c: rgb(255, 0, 0);
+    width: 30px;
+    aspect-ratio: 1;
+    background:
+     radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+     radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+     conic-gradient(from -45deg at 50% 84%,var(--c) 90deg,#0000 0) 
+      bottom/100% 50% no-repeat;
+      position: absolute;
+      right: 8px;
+      top: 8px;      
+  }

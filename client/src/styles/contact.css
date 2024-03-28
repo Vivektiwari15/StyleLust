@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+
+.contact-form {
+    color: white;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Form container styles */
+  .form-container {
+    background-color: black;
+    border-radius: 30px;
+    padding: 2rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+  }
+  
+
+
+  /* Header styles */
+  .form-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 1px;
+  }
+  
+  /* Form styles */
+  #contactFormForm {
+    width: 100%;
+  }
+  
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Label styles */
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Input and Textarea styles */
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    border-width: 1px;
+    padding-left: 0.75rem;
+    padding-right: 0.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.055);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    text-transform: lowercase;
+    margin-right: 50px;
+  }
+  
+  .form-input:focus,.form-textarea:focus{
+    outline: 1px solid white; 
+  }
+
+  .form-textarea::-webkit-scrollbar{
+    display: none;
+  }
+  .form-textarea {
+    min-height: 140px;
+    resize: none;
+  }
+  
+  /* Button styles */
+  .form-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* #223486 */
+  .form-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+    height: 2.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .form-button:hover {
+    background-color: #2c62f9;
+    border: 1px solid #2c62f9;
+  }
+  
