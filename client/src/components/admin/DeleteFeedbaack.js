@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function DeleteFeedbaack() {
   return (
@@ -22,36 +23,36 @@ export default function DeleteFeedbaack() {
           <td>Iacob Geaorgescu</td>
           <td>e-mail@test-email.com</td>
           <td className="select">
-            <a href="#" className="button">
+            <Link  className="button">
               Replied
-            </a>
+            </Link>
           </td>
         </tr>
         <tr>
           <td>Julius Neumann</td>
           <td>e-mail@test-email.com</td>
           <td className="select">
-            <a href="#" className="button">
+            <Link href="#" className="button">
               Replied
-            </a>
+            </Link>
           </td>
         </tr>
         <tr>
           <td>Christoph Koller</td>
           <td>e-mail@test-email.com</td>
           <td className="select">
-            <a href="#" className="button">
+            <Link href="#" className="button">
               Replied
-            </a>
+            </Link>
           </td>
         </tr>
         <tr>
           <td>Bram Lemmens</td>
           <td>e-mail@test-email.com</td>
           <td className="select">
-            <a href="#" className="button">
+            <Link href="#" className="button">
               Replied
-            </a>
+            </Link>
           </td>
         </tr>
       </tbody>

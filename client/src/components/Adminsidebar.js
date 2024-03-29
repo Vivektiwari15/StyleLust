@@ -14,6 +14,7 @@ import DeleteFeedbaack from './admin/DeleteFeedbaack'
 import ViewUser from './admin/ViewUser'
 import DeleteUser from './admin/DeleteUser'
 import AdminSignup from './admin/AdminSignup'
+import NotFound from './NotFound'
 
 
 export default function Adminsidebar() {
@@ -59,6 +60,9 @@ export default function Adminsidebar() {
     case 11:
       componentToRender = <AdminSignup />;
       break;
+    default:
+      componentToRender = <NotFound/>;
+      break;  
   }
 
   return (
