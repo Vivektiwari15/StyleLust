@@ -16,14 +16,6 @@ export default function AddOutfit() {
     <input id="file-upload" type="file" /> <br /> <br />
     <p className="fields">Outfit Name</p> <input type="text" name="" id="" />
     <br /> <br />
-    <p>Number of feilds</p>
-    <select name="" id="">
-      <option value="">1</option>
-      <option value="">2</option>
-      <option value="">3</option>
-      <option value="">4</option>
-    </select>
-    <br /> <br />
     <div id="feilds">
       <p>
         Upper Wear: <input type="text" name="" id="" />

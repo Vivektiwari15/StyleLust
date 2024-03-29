@@ -4,6 +4,8 @@ require('dotenv').config()
 
 
 app.use(express.json())
+app.use(express.static('public'))
+
 
 // Routes
 app.use('',require('./src/index'))

@@ -8,7 +8,7 @@ class carouselController {
           .status(400)
           .json({ message: "Please select image", success: false });
       const carouselImage = await Carousel({
-        carouselImage: req.file.filename
+        carouselImg: req.file.filename
       });
       const saveCarousel = carouselImage.save();
       res
@@ -22,7 +22,7 @@ class carouselController {
   };
   find = async (req, res) => {
     try {
-      const carouselImage = await Carousel.find();
+      const carouselImage = await Carousel.find().sort({_id:-1});
       res.status(200).json({ Images: carouselImage });
     } catch (error) {
       res
@@ -32,8 +32,9 @@ class carouselController {
   };
   delete = async (req, res) => {
     try {
-      const carouselImage = await Carousel.findByIdAndDelete(req.body.id);
-      res.status(200).json({ success: true });
+      console.log(req.body.id)
+      const carouselImage = await Carousel.findByIdAndDelete(req.body.id,{new:true});
+      res.status(200).json({ message:"Image Deleted",success: true });
     } catch (error) {
       res
         .status(500)

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const carouselSchema = mongoose.Schema({
-    carouselImage: {
+    carouselImg: {
         type: String,
         required: true
       }
