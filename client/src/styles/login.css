@@ -133,7 +133,7 @@
 .error{
     text-align: center;
     padding-bottom: 20px;
-    color: red;
+    color: rgba(211, 211, 211, 0.76);
 }
 .msg{
     text-align: center;
