@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-
+const cors = require('cors')
 
 app.use(express.json())
 app.use(express.static('public'))
-
+app.use(cors())
 
 // Routes
 app.use('',require('./src/index'))

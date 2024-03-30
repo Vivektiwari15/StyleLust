@@ -115,7 +115,9 @@
 .error{
     text-align: center;
     padding-bottom: 20px;
-    color: red;
+    color: lightgray;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 
