@@ -14,7 +14,7 @@ export default function Signup() {
     event.preventDefault();
     setErrorMsg("")
     const {username,email,password } = signupData;
-    const response = await fetch(`${process.env.REACT_APP_API}auth/signup`, {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export default function Signup() {
     if(!json.success){
       return setErrorMsg(json.message)
     }  
-    await localStorage.setItem("authToken",json.authToken)
+     localStorage.setItem("authToken",json.authToken)
     navigate('/verifyotp') 
   }
 
@@ -90,7 +90,7 @@ export default function Signup() {
   </div>
   <br />
   <p className="Gobacktopage">
-    Already a user?<Link to='/login' className="gbpg" onClick={handleSignup} >Login</Link>
+    Already a user?<Link to='/login' className="gbpg" >Login</Link>
   </p>
   <p className="Gobacktopage">
     ←<Link to='/home' className="gbpg">Go back to home</Link>

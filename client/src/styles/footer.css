@@ -13,6 +13,7 @@ footer{
 .lists{
     display: inline-flex;
     padding: 20px;
+    white-space: nowrap;
 }
 .navigator{
     font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +22,7 @@ footer{
 }
 
 .navigator-list{
-    padding: 10px;
+    padding: 8px;
     list-style: none;
 }
 .menu{
@@ -34,11 +35,11 @@ footer{
     font-size:30px;
     vertical-align:middle;
     line-height:20px;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 .social-media-title{
     padding-top: 5px;
-    padding-left: 80px;
+    padding-left: 10px;
     font-size: 14px;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,10 +47,10 @@ footer{
 .social-logo{
     display: inline-flex;
     list-style: none;
-    padding: 0px 0px 0px 55px;
+    padding: 0px 0px 0px 10px;
 }
 #media-logo{
-    padding: 6px;
+    padding: 0px;
     padding-bottom: 0;
 }
 .copyrights{

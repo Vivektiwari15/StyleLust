@@ -12,6 +12,8 @@ import UpdatePassword from './pages/UpdatePassword';
 import SuperAdminLogin from './pages/SuperAdminLogin';
 import SuperAdminSignup from './pages/SuperAdminSignup';
 import VerifySuperAdmin from './pages/VerifySuperAdmin';
+import NotFound from './components/NotFound';
+import VerifyForgotPassword from './pages/VerifyForgotPassword';
 
 function App() {
   return (
@@ -23,12 +25,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/forgotpassword/verify" element={<VerifyForgotPassword/>} />
         <Route path="/updatepassword" element={<UpdatePassword />} />
         <Route path="/verifyotp" element={<VerifyOtp />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/superadmin/login" element={<SuperAdminLogin />} />
         <Route path="/superadmin/signup" element={<SuperAdminSignup />} />
         <Route path="/superadmin/verify" element={<VerifySuperAdmin />} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
   );
