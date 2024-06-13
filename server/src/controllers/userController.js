@@ -217,7 +217,7 @@ class userController {
 
   forgotPasswordVerify = async (req, res) => {
     try {
-      const token = req.header("authToken");
+      const token = req.header("ForgotPassword");
       const decode = jwt.verify(token, process.env.SECRET_KEY);
       const findUser = await User.findById(decode.data.token);
       if (!req.body.otp)

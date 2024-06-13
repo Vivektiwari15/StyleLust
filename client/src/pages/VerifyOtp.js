@@ -16,7 +16,7 @@ export default function VerifyOtp() {
 
     const token = localStorage.getItem("authToken")
     const {otp} = verifyData
-    const response = await fetch(`${process.env.REACT_APP_API}auth/verify`, {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/auth/verify`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

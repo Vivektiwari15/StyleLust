@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/login.css'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -14,18 +14,12 @@ export default function Login() {
   const handleLogin = async(event)=>{
     event.preventDefault();
     setErrorMsg("")
-    let token 
-    if(localStorage.getItem("authToken"))
-    {
-      token = localStorage.getItem("authToken")
-      
-    }
+    
     const {identifier,password } = loginData;
-    const response = await fetch(`${process.env.REACT_APP_API}auth/login`, {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/auth/login`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "authToken":token
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({identifier,password}),
     });
@@ -33,9 +27,8 @@ export default function Login() {
     const json = await response.json();
     console.log(json)
     if(!json.success){
+      console.log(json.message)
       return setErrorMsg(json.message)
-    } if(!json.authToken){
-      return navigate('/home') 
     }
     localStorage.setItem("authToken",json.authToken)
     navigate('/home') 
@@ -46,6 +39,34 @@ export default function Login() {
     setloginData({ ...loginData, [e.target.name]: e.target.value })
   }
 
+
+  useEffect(()=>{
+
+    const fetchUser = async(token)=>{
+        const response = await fetch(`${process.env.REACT_APP_API}/api/auth/login`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "authToken":token
+          }
+        });
+    
+        console.log(response)
+        const json = await response.json();
+        if(json.success){
+          navigate('/home') 
+
+        }
+      }
+
+      const token  = localStorage.getItem("authToken")  
+      if(token){
+        console.log(token)
+        fetchUser(token)
+      }
+
+
+  })
 
   return (
     <>
@@ -83,10 +104,10 @@ export default function Login() {
 
         />
       </div>
-      <p className="msg">Don't remember password?</p>
-      <Link className="msgs">forgot password</Link>
       <p className="error">{errorMsg}</p>
-      <div className="form-actions">
+      <p className="msg">Don't remember password?</p>
+      <Link to="/forgotpassew" className="msgs">forgot password</Link> <br/>
+      <div className="form-actions"> 
         <input type='submit' className="form-button" value='Login' />
       </div>
     </form>
